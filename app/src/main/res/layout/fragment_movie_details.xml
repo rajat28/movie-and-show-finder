@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/title_year_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/five_dp_margin"
+            android:paddingRight="@dimen/five_dp_margin"
+            android:paddingEnd="@dimen/five_dp_margin"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/rated_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_year_text_view"
+            android:paddingTop="@dimen/five_dp_margin"
+            android:paddingRight="@dimen/five_dp_margin"
+            android:paddingEnd="@dimen/five_dp_margin"
+            android:paddingBottom="@dimen/eight_dp_margin"/>
+
+        <TextView
+            android:id="@+id/genre_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/rated_text_view"
+            android:layout_toRightOf="@id/rated_text_view"
+            android:layout_toEndOf="@id/rated_text_view"
+            android:paddingLeft="@dimen/five_dp_margin"
+            android:paddingStart="@dimen/five_dp_margin"
+            android:paddingBottom="@dimen/eight_dp_margin"/>
+
+        <TextView
+            android:id="@+id/runtime_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/rated_text_view"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:paddingBottom="@dimen/eight_dp_margin"/>
+
+        <TextView
+            android:id="@+id/plot_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rated_text_view"
+            android:paddingTop="@dimen/eight_dp_margin"
+            android:paddingBottom="@dimen/eight_dp_margin"/>
+
+        <ImageView
+            android:id="@+id/poster_image_view"
+            android:layout_width="150dp"
+            android:layout_height="230dp"
+            android:layout_below="@id/plot_text_view"
+            android:paddingTop="@dimen/eight_dp_margin"
+            android:paddingBottom="@dimen/eight_dp_margin"
+            android:paddingRight="@dimen/five_dp_margin"
+            android:paddingEnd="@dimen/five_dp_margin"/>
+
+        <TextView
+            android:id="@+id/imdb_rating_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plot_text_view"
+            android:layout_toRightOf="@id/poster_image_view"
+            android:layout_toEndOf="@id/poster_image_view"
+            android:paddingTop="@dimen/thirty_dp_margin"
+            android:paddingBottom="@dimen/twenty_two_dp_margin"/>
+
+        <TextView
+            android:id="@+id/imdb_votes_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imdb_rating_text_view"
+            android:layout_toEndOf="@id/imdb_rating_text_view"
+            android:layout_alignBaseline="@id/imdb_rating_text_view"
+            android:paddingBottom="@dimen/twenty_two_dp_margin"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/metascore_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imdb_rating_text_view"
+            android:layout_toRightOf="@id/poster_image_view"
+            android:layout_toEndOf="@id/poster_image_view"
+            android:paddingTop="@dimen/twenty_two_dp_margin"
+            android:paddingBottom="@dimen/twenty_two_dp_margin"/>
+
+        <TextView
+            android:id="@+id/awards_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/metascore_text_view"
+            android:layout_toRightOf="@id/poster_image_view"
+            android:layout_toEndOf="@id/poster_image_view"
+            android:paddingTop="@dimen/twenty_two_dp_margin"
+            android:paddingBottom="@dimen/eight_dp_margin"/>
+
+        <TextView
+            android:id="@+id/released_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/poster_image_view"
+            android:paddingTop="@dimen/eight_dp_margin"
+            android:paddingBottom="@dimen/five_dp_margin"/>
+
+        <TextView
+            android:id="@+id/actors_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/released_text_view"
+            android:paddingTop="@dimen/five_dp_margin"
+            android:paddingBottom="@dimen/five_dp_margin"/>
+
+        <TextView
+            android:id="@+id/director_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/actors_text_view"
+            android:paddingTop="@dimen/five_dp_margin"
+            android:paddingBottom="@dimen/five_dp_margin"/>
+
+        <TextView
+            android:id="@+id/writers_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/director_text_view"
+            android:paddingTop="@dimen/five_dp_margin"/>
+
+    </RelativeLayout>
+
+</ScrollView>
